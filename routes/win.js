@@ -6,7 +6,7 @@ const sqlite3 = require('sqlite3').verbose();
 const DEVICE_ID = '220021000147353138383138';
 const ACCESS_TOKEN = 'fc5a27992f0ff920dc63a1d219cf6f9a9e72eb88';
 const particle = new Particle();
-const db = new sqlite3.Database('ressources/results.db');
+const db = new sqlite3.Database('resources/results.db');
 
 module.exports = function win(server) {
     // API endpoint when player wins a game

@@ -25,7 +25,7 @@ for (let index = 0; index < LED_LIGHTS; index++) {
 }
 
 // Finally we reset the counter of wins of all players in the SQLite DB
-const db = new sqlite3.Database('ressources/results.db');
+const db = new sqlite3.Database('resources/results.db');
 db.run('UPDATE results SET wins=0 WHERE player_id=1');
 db.run('UPDATE results SET wins=0 WHERE player_id=2');
 
